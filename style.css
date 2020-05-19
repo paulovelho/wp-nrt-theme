@@ -5184,3 +5184,10 @@ article .entry-content table th {
 	padding: 2px;
 }
 
+
+.post-date {
+    color: #ff5c1a;
+    margin-left: 10px;
+    display: block;
+}
+

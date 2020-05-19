@@ -251,13 +251,13 @@ if ( ( ( LONGFORM_LAYOUT == 'sidebar-left' && is_active_sidebar( 'sidebar-1' ) )
 							longform_posted_on();
 
 						if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && longform_categorized_blog() ) : ?>
-							<span class="cat-links">/<?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'longform' ) ); ?></span>
+							<!--span class="cat-links">-<?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'longform' ) ); ?></span-->
 					<?php
 						endif;
 
 						if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
 					?>
-					<span class="comments-link">/<?php comments_popup_link( __( 'No Comments', 'longform' ), __( '1 Comment', 'longform' ), __( '% Comments', 'longform' ) ); ?></span>
+					<span class="comments-link">-<span class="post-date"><?php echo get_the_date(); ?></span></span>
 					<?php
 						endif;
 					?>
