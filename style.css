@@ -259,9 +259,9 @@ q:after {
 
 blockquote {
 	color: #353535;
-	line-height: 1.2631578947;
 	margin-bottom: 30px;
 	font-family: "PT Serif";
+	padding: 0 70px;
 }
 
 blockquote:before {
